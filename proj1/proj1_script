@@ -1,0 +1,176 @@
+Script started on Fri Sep  5 00:08:47 2014
+[?1034hbash-3.2$ ssh -l akshoopc[K ccc.wpi.edu
+akshoop@ccc.wpi.edu's password: 
+Last login: Thu Sep  4 23:47:30 2014 from shoop-macbook.wifi.wpi.edu
+
+CCC Station - Authorized Use Only
+
+Mail all questions or problems to the address helpdesk@wpi.edu or use the
+help command to view the CCC Helpdesk web at http://www.wpi.edu/+CCC/Help.
+
+Please use the aup command to view the Acceptable Use Policy of the WPI
+network.
+
+This station is for interactive use.
+-bash-3.2$ cd cs3013/proj1
+-bash-3.2$ gcc -Wall -o doit proj1.c
+-bash-3.2$ ./doit e cat /etc/motd
+
+CCC Station - Authorized Use Only
+
+Mail all questions or problems to the address helpdesk@wpi.edu or use the
+help command to view the CCC Helpdesk web at http://www.wpi.edu/+CCC/Help.
+
+Please use the aup command to view the Acceptable Use Policy of the WPI
+network.
+
+This station is for interactive use.
+
+The command cat used the following system resources:
+
+____________________________________________________________________
+CPU time used (user): 0ms
+CPU time used (system): 0ms
+Elapsed wall clock time: 1ms
+Number of times process was preempted involuntarily: 0
+Number of times process voluntarily gave up CPU: 1
+Number of page faults: 0
+Number of page faults (could be satisfied by reclaiming memory): 171
+
+-bash-3.2$ ./doit sleep 4
+
+The command sleep used the following system resources:
+
+____________________________________________________________________
+CPU time used (user): 0ms
+CPU time used (system): 0ms
+Elapsed wall clock time: 4003ms
+Number of times process was preempted involuntarily: 0
+Number of times process voluntarily gave up CPU: 2
+Number of page faults: 0
+Number of page faults (could be satisfied by reclaiming memory): 174
+
+-bash-3.2$ ./doit ping www.google.com -c 4 -w 3 -a
+PING www.google.com (74.125.131.105) 56(84) bytes of data.
+64 bytes from vc-in-f105.1e100.net (74.125.131.105): icmp_seq=1 ttl=48 time=26.0 ms
+64 bytes from vc-in-f105.1e100.net (74.125.131.105): icmp_seq=2 ttl=48 time=25.6 ms
+64 bytes from vc-in-f105.1e100.net (74.125.131.105): icmp_seq=3 ttl=48 time=30.7 ms
+
+--- www.google.com ping statistics ---
+4 packets transmitted, 3 received, 25% packet loss, time 2999ms
+rtt min/avg/max/mdev = 25.651/27.470/30.750/2.327 ms
+
+The command ping used the following system resources:
+
+____________________________________________________________________
+CPU time used (user): 0ms
+CPU time used (system): 4ms
+Elapsed wall clock time: 3007ms
+Number of times process was preempted involuntarily: 6
+Number of times process voluntarily gave up CPU: 19
+Number of page faults: 0
+Number of page faults (could be satisfied by reclaiming memory): 273
+
+-bash-3.2$ ./doit  
+Please type in a command along with any necessary parameters or path
+==>ls
+doit  proj1.c  proj1_script  stress-1.0.4  testpath
+
+The command ls used the following system resources:
+
+____________________________________________________________________
+CPU time used (user): 0ms
+CPU time used (system): 0ms
+Elapsed wall clock time: 10ms
+Number of times process was preempted involuntarily: 1
+Number of times process voluntarily gave up CPU: 3
+Number of page faults: 0
+Number of page faults (could be satisfied by reclaiming memory): 271
+
+Please type in a command along with any necessary parameters or path
+==>cat /etc/motd
+
+CCC Station - Authorized Use Only
+
+Mail all questions or problems to the address helpdesk@wpi.edu or use the
+help command to view the CCC Helpdesk web at http://www.wpi.edu/+CCC/Help.
+
+Please use the aup command to view the Acceptable Use Policy of the WPI
+network.
+
+This station is for interactive use.
+
+The command cat used the following system resources:
+
+____________________________________________________________________
+CPU time used (user): 0ms
+CPU time used (system): 0ms
+Elapsed wall clock time: 2ms
+Number of times process was preempted involuntarily: 2
+Number of times process voluntarily gave up CPU: 4
+Number of page faults: 0
+Number of page faults (could be satisfied by reclaiming memory): 442
+
+Please type in a command along with any necessary parameters or path
+==>cd testpath
+Please type in a command along with any necessary parameters or path
+==>cd  ls
+anothertestpath_numerodos
+
+The command ls used the following system resources:
+
+____________________________________________________________________
+CPU time used (user): 0ms
+CPU time used (system): 4ms
+Elapsed wall clock time: 3ms
+Number of times process was preempted involuntarily: 3
+Number of times process voluntarily gave up CPU: 6
+Number of page faults: 0
+Number of page faults (could be satisfied by reclaiming memory): 712
+
+Please type in a command along with any necessary parameters or path
+==>cd anothertestpath_num                   ..
+Please type in a command along with any necessary parameters or path
+==>cd testpath/amother      nothertestpath_numerodos
+Please type in a command along with any necessary parameters or path
+==>ls
+
+The command ls used the following system resources:
+
+____________________________________________________________________
+CPU time used (user): 0ms
+CPU time used (system): 8ms
+Elapsed wall clock time: 3ms
+Number of times process was preempted involuntarily: 4
+Number of times process voluntarily gave up CPU: 8
+Number of page faults: 0
+Number of page faults (could be satisfied by reclaiming memory): 977
+
+Please type in a command along with any necessary parameters or path
+==>cd ..
+Please type in a command along with any necessary parameters or path
+==>cd ..
+Please type in a command along with any necessary parameters or path
+==>
+Execvp error
+
+The command  used the following system resources:
+
+____________________________________________________________________
+CPU time used (user): 0ms
+CPU time used (system): 8ms
+Elapsed wall clock time: 1ms
+Number of times process was preempted involuntarily: 4
+Number of times process voluntarily gave up CPU: 9
+Number of page faults: 0
+Number of page faults (could be satisfied by reclaiming memory): 1016
+
+Please type in a command along with any necessary parameters or path
+==>exit
+-bash-3.2$ exit
+logout
+Connection to ccc.wpi.edu closed.
+bash-3.2$ exit
+exit
+
+Script done on Fri Sep  5 00:10:56 2014

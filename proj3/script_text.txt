@@ -1,0 +1,59 @@
+Script started on Thu 02 Oct 2014 11:52:58 PM EDT
+bash-3.2$ make
+gcc addem.c -o addem -lpthread -lrt
+gcc life.c -o life -lpthread -lrt
+bash-3.2$ ./addem 3 8
+The total for 1 to 8 using 3 threads is 36
+bash-3.2$ ./addem 10 100
+The total for 1 to 100 using 10 threads is 5050
+bash-3.2$ ./addem 10 100 1
+The total for 1 to 101 using 10 threads is 5151
+bash-3.2$ cat test.txt
+0 1 0 0
+0 0 1 0
+1 0 0 1
+bash-3.2$ ./life 1 test.txt
+Error: usage is ./life threads filename generations [print] [input]
+bash-3.2$ ./life 1 test.txt 1
+
+number of rows is 3 and number of columns is 4
+Producer & Consumer semaphore created for each mailbox
+gens allocated
+Succssfully put file in board
+Populated mailboxes
+Generation 0:
+0 1 0 0 
+0 0 1 0 
+1 0 0 1 
+
+thread 1 is gonna make rows of next gen
+Everything is done
+bash-3.2$ ./life 3 test.txt 5
+
+number of rows is 3 and number of columns is 4
+Producer & Consumer semaphore created for each mailbox
+gens allocated
+Succssfully put file in board
+Populated mailboxes
+Generation 0:
+0 1 0 0 
+0 0 1 0 
+1 0 0 1 
+
+Generation 0:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+
+thread 2 is gonna make rows of next gen
+Generation 0:
+0 1 0 0 
+0 0 1 0 
+1 0 0 1 
+
+thread 3 is gonna make rows of next gen
+Segmentation fault
+bash-3.2$ exit
+exit
+
+Script done on Thu 02 Oct 2014 11:53:57 PM EDT
